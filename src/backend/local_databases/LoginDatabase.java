@@ -1,35 +1,27 @@
 package backend.local_databases;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.io.*;
 
-public class LoginDatabase implements DataBase<String> {
+public class LoginDatabase{
 
-    File credentials = new File("credentials.txt");
+    File credentials = new File("login_database.txt");
 
     /*
     Scans the credentials.txt file for username password pairs based on the given username string. If the username is
     found, the corresponding password is returned. If the username does not exist, null return.
      */
-    @Override
     public String retrieve(String username) {
         try {
-            Scanner scanner = new Scanner(credentials);
-            while(scanner.hasNextLine()) {
-                String[] currentCredential = scanner.nextLine().split(",");
-                if (currentCredential[0].equals(username)) return currentCredential[1];
+            BufferedReader reader = new BufferedReader(new FileReader("login_database.txt"));
+            String currentCredential;
+            while((currentCredential = reader.readLine()) != null) {
+                String[] currentCredentialParsed = currentCredential.split(",");
+                if (currentCredentialParsed[0].equals(username)) return currentCredentialParsed[1];
             }
-        } catch(FileNotFoundException e) {
+        } catch(IOException e) {
             System.out.println("credentials file missing. Attempt reinstall of files");
             System.exit(0);
         }
         return null;
     }
-
-    @Override
-    public boolean add(String username, String Password) {
-        return false;
-    }
-
 }
