@@ -3,6 +3,7 @@ package backend.readers;
 import com.google.gson.JsonArray;
 
 import backend.Data;
+import backend.Data3Series;
 import backend.ReaderStrategy;
 
 public class Reader1 extends ReaderStrategy
@@ -12,7 +13,7 @@ public class Reader1 extends ReaderStrategy
 	// make urls based on parameters
 	public Reader1(int year1, int year2, String country)
 	{
-		data = new Data<Float, Float, Float>();
+		data = new Data3Series<Float, Float, Float>();
 		
 		currentSeries = 1;
 		urlString = String.format(
@@ -40,14 +41,14 @@ public class Reader1 extends ReaderStrategy
 			if (jsonArray.get(1).getAsJsonArray().get(i).getAsJsonObject().get("value").isJsonNull())
 			{
 				if (currentSeries == 1) data.addSeriesOne(-1.0f);
-				if (currentSeries == 2) data.addSeriesTwo(-1.0f);
-				if (currentSeries == 3) data.addSeriesThree(-1.0f);
+				if (currentSeries == 2) ((Data3Series<Float, Float, Float>) data).addSeriesTwo(-1.0f);
+				if (currentSeries == 3) ((Data3Series<Float, Float, Float>) data).addSeriesThree(-1.0f);
 			}
 			else
 			{
 				if (currentSeries == 1) data.addSeriesOne(jsonArray.get(1).getAsJsonArray().get(i).getAsJsonObject().get("value").getAsFloat());
-				if (currentSeries == 2) data.addSeriesTwo(jsonArray.get(1).getAsJsonArray().get(i).getAsJsonObject().get("value").getAsFloat());
-				if (currentSeries == 3) data.addSeriesThree(jsonArray.get(1).getAsJsonArray().get(i).getAsJsonObject().get("value").getAsFloat());
+				if (currentSeries == 2) ((Data3Series<Float, Float, Float>) data).addSeriesTwo(jsonArray.get(1).getAsJsonArray().get(i).getAsJsonObject().get("value").getAsFloat());
+				if (currentSeries == 3) ((Data3Series<Float, Float, Float>) data).addSeriesThree(jsonArray.get(1).getAsJsonArray().get(i).getAsJsonObject().get("value").getAsFloat());
 			}
 		}
 	}
