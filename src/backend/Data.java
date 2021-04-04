@@ -17,4 +17,9 @@ public class Data<t1> extends Model
 	{
 		seriesOne.add(dataItem);
 	}
+	
+	public List<t1> getSeriesOne()
+	{
+		return seriesOne;
+	}
 }

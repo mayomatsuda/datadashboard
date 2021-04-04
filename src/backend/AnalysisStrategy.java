@@ -1,7 +1,31 @@
 package backend;
 
-public abstract class AnalysisStrategy
+import org.jfree.data.time.TimeSeries;
+
+public class AnalysisStrategy
 {
-	public abstract void doOperation(Context context, Data data);
-	public abstract String getName();
+	protected String name;
+	protected int[] availableYears;
+	protected String[] availableCountries;
+	protected String[] availableViews;
+	
+	protected Series[] series;
+	protected int yearOne;
+	protected int yearTwo;
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	// By default, assume no operation
+	public Data doOperation(Context context)
+	{
+		return context.getData();
+	}
+	
+	public Series[] getSeries(Context context)
+	{
+		return series;
+	}
 }

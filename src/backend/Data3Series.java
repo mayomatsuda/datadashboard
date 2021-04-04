@@ -25,4 +25,14 @@ public class Data3Series<t1, t2, t3> extends Data<t1>
 	{
 		seriesThree.add(dataItem);
 	}
+	
+	public List<t2> getSeriesTwo()
+	{
+		return seriesTwo;
+	}
+	
+	public List<t3> getSeriesThree()
+	{
+		return seriesThree;
+	}
 }

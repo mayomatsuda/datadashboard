@@ -18,4 +18,9 @@ public class Data2Series<t1, t2> extends Data<t1>
 	{
 		seriesTwo.add(dataItem);
 	}
+	
+	public List<t2> getSeriesTwo()
+	{
+		return seriesTwo;
+	}
 }
