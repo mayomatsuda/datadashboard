@@ -50,9 +50,4 @@ public class ReaderStrategy
 	{
 		
 	}
-	
-	public Data getData()
-	{
-		return data;
-	}
 }

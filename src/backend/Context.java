@@ -1,13 +1,28 @@
 package backend;
 
+import org.jfree.data.time.TimeSeries;
+
 public class Context
 {
 	private AnalysisStrategy analysisStrategy;
 	private ReaderStrategy readerStrategy;
 	
+	private Data data;
+	private String type;
+	
 	public Context()
 	{
 		
+	}
+	
+	public Data getData()
+	{
+		return data;
+	}
+	
+	public String getType()
+	{
+		return type;
 	}
 	
 	public void setAnalysisStrategy(AnalysisStrategy analysisStrategy)
@@ -20,13 +35,14 @@ public class Context
 		this.readerStrategy = readerStrategy;
 	}
 	
-	public void executeAnalysis()
+	public Series[] executeAnalysis()
 	{
-		analysisStrategy.doOperation(this);
+		data = analysisStrategy.doOperation(this);
+		return analysisStrategy.getSeries(this);
 	}
 	
 	public void executeReader()
 	{
-		readerStrategy.doOperation(this);
+		data = readerStrategy.readAppropriateData();
 	}
 }
