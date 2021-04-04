@@ -8,6 +8,8 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
+import backend.VerificationServer;
+
 /*
     class for logging in to the system
 */
@@ -121,6 +123,7 @@ public class login implements ActionListener{
 		// TODO Auto-generated method stub
 		String user = userText.getText();
 		String password = passwordText.getText();
-		
+		VerificationServer verify = new VerificationServer();
+		verify.getResult(user, password);
 	}
 }
