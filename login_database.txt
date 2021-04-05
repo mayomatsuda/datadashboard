@@ -1,6 +1,2 @@
-user1
-abc
-user2
-def
-user3
-ghk
+testuser1,testpass1
+testuser2,testpass2
