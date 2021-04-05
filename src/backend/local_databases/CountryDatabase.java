@@ -22,7 +22,7 @@ public class CountryDatabase implements Database<String[]> {
                 countryList.add(countryName);
             }
         } catch (NullPointerException | IOException e) {
-            System.out.println("countries file missing. Attempt reinstall of files");
+            System.out.println("Countries file missing. Attempt reinstall of files");
             System.exit(0);
         }
         return countryList.toArray(new String[0]);
