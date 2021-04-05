@@ -4,7 +4,7 @@ import java.io.*;
 
 public class LoginDatabase{
 
-    File credentials = new File("login_database.txt");
+    private File credentials = new File("login_database.txt");
 
     /*
     Scans the credentials.txt file for username password pairs based on the given username string. If the username is
