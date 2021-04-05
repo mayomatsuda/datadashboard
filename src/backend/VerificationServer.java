@@ -1,10 +1,11 @@
 package backend;
 
 import backend.local_databases.LoginDatabase;
+import backend.local_databases.ViewsDatabase;
+
+import java.util.Arrays;
 
 public class VerificationServer {
-
-    LoginDatabase loginDB = new LoginDatabase();
 
     /*
     Makes use of the LoginDatabase to access the credentials file and validate login input against existing login info.
@@ -13,6 +14,7 @@ public class VerificationServer {
     or if the password input was wrong.
      */
     private boolean validateLogin(String username, String password) {
+        LoginDatabase loginDB = new LoginDatabase();
         String passwordRetrieved = loginDB.retrieve(username);
         if (passwordRetrieved == null) {
             System.out.println("Unknown username.");
@@ -26,7 +28,11 @@ public class VerificationServer {
     /*
     Public interface to allow the login ui to verify the input from the user. Calls the validateLogin method
      */
-    public boolean getResult(String username, String password) {
-        return validateLogin(username, password);
+    public boolean getResult(String username, String password) { return validateLogin(username, password); }
+
+    public boolean validateView(String analysisType, String viewType) {
+        ViewsDatabase viewDB = new ViewsDatabase();
+        String[] availableViews = viewDB.retrieve(analysisType);
+        return Arrays.asList(availableViews).contains(viewType);
     }
 }
