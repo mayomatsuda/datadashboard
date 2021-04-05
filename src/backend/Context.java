@@ -30,7 +30,7 @@ public class Context
 		this.analysisStrategy = analysisStrategy;
 	}
 	
-	public void setAnalysisStrategy(ReaderStrategy readerStrategy)
+	public void setReaderStrategy(ReaderStrategy readerStrategy)
 	{
 		this.readerStrategy = readerStrategy;
 	}
