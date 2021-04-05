@@ -1,3 +1,5 @@
+package frontend;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -88,9 +90,10 @@ public class login implements ActionListener{
 		frame.add(panel);
 		
 		panel.setLayout(null);
+		frame.setVisible(true);
 		
 		/* User name label for the user label */
-		userLabel = new JLabel("Username");
+		userLabel = new JLabel("User-name");
 		userLabel.setBounds(10 , 20 , 80 , 25);
 		panel.add(userLabel);
 		
@@ -101,16 +104,16 @@ public class login implements ActionListener{
 		
 		/* Password label for the password */
 		passwordLabel = new JLabel("Password");
-		passwordLabel.setBounds(10 , 50 , 80 , 25);
+		passwordLabel.setBounds(10 , 60 , 80 , 25);
 		panel.add(passwordLabel);
 		
 		/*  To enter the password */
 		passwordText = new JPasswordField(20);
-		passwordText.setBounds(100, 50 ,165 , 25);
+		passwordText.setBounds(100, 60 ,165 , 25);
 		panel.add(passwordText);
 		
 		button = new JButton("Login");
-		button.setBounds(10,80,80,25);
+		button.setBounds(10,90,80,25);
 		button.addActionListener(new login());
 		panel.add(button);
 		
