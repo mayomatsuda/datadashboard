@@ -241,12 +241,12 @@ TUV;
 UGA;
 UKR;
 ARE;
-GBR;
+GBR;analysis1,analysis2,analysis3,analysis4,analysis5,analysis6,analysis7,analysis8
 TZA;
 UMI;
 URY;
 VIR;
-USA;analysis1,analysis2,analysis3,analysis4,analysis5,analysis6,analysis7,analysis8
+USA;
 UZB;
 VUT;
 VEN;
