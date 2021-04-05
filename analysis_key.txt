@@ -1,0 +1,8 @@
+analysis1,CO2 emission (MT/CAP) vs energy use (KG/CAP) vs PM2.5 pollution (microgram/m3)
+analysis2,PM2.5 pollution (microgram/m3) vs forest area (%land)
+analysis3,CO2 emissions (MT/CAP) to GDP per CAP (US$)
+analysis4,average forest area (%land)
+analysis5,average education expenditure (%GDP)
+analysis6,hospital beds (per 1000) to health expenditure (%GDP)
+analysis7,health expenditure (US$/CAP) vs infant mortality (per 1000 birth)
+analysis8,education expenditure (%GDP) vs health expenditure (%GDP)

@@ -28,7 +28,7 @@ BIH;
 BWA;
 IOT;
 VGB;
-BRA;CO2 emission (MT/CAP) vs energy use (KG/CAP) vs PM2.5 pollution (microgram/m3),PM2.5 pollution (microgram/m3) vs forest area (%land),CO2 emissions (MT/CAP) to GDP per CAP (US$),average forest area (%land),average education expenditure (%GDP),hospital beds (per 1000) to health expenditure (%GDP),health expenditure (US$/CAP) vs infant mortality (per 1000 birth),education expenditure (%GDP) vs health expenditure (%GDP)
+BRA;analysis1,analysis2,analysis3,analysis4,analysis5,analysis6,analysis7,analysis8
 BRN;
 BGR;
 BFA;
@@ -36,12 +36,12 @@ BDI;
 CPV;
 KHM;
 CMR;
-CAN;CO2 emission (MT/CAP) vs energy use (KG/CAP) vs PM2.5 pollution (microgram/m3),PM2.5 pollution (microgram/m3) vs forest area (%land),CO2 emissions (MT/CAP) to GDP per CAP (US$),average forest area (%land),average education expenditure (%GDP),hospital beds (per 1000) to health expenditure (%GDP),health expenditure (US$/CAP) vs infant mortality (per 1000 birth),education expenditure (%GDP) vs health expenditure (%GDP)
+CAN;analysis1,analysis2,analysis3,analysis4,analysis5,analysis6,analysis7,analysis8
 CYM;
 CAF;
 TCD;
 CHL;
-CHN;CO2 emission (MT/CAP) vs energy use (KG/CAP) vs PM2.5 pollution (microgram/m3),PM2.5 pollution (microgram/m3) vs forest area (%land),CO2 emissions (MT/CAP) to GDP per CAP (US$),average forest area (%land),average education expenditure (%GDP),hospital beds (per 1000) to health expenditure (%GDP),health expenditure (US$/CAP) vs infant mortality (per 1000 birth),education expenditure (%GDP) vs health expenditure (%GDP)
+CHN;analysis1,analysis2,analysis3,analysis4,analysis5,analysis6,analysis7,analysis8
 HKG;
 MAC;
 CXR;
@@ -125,7 +125,7 @@ IRL;
 ISR;
 ITA;
 JAM;
-JPN;CO2 emission (MT/CAP) vs energy use (KG/CAP) vs PM2.5 pollution (microgram/m3),PM2.5 pollution (microgram/m3) vs forest area (%land),CO2 emissions (MT/CAP) to GDP per CAP (US$),average forest area (%land),average education expenditure (%GDP),hospital beds (per 1000) to health expenditure (%GDP),health expenditure (US$/CAP) vs infant mortality (per 1000 birth),education expenditure (%GDP) vs health expenditure (%GDP)
+JPN;analysis1,analysis2,analysis3,analysis4,analysis5,analysis6,analysis7,analysis8
 JOR;
 KAZ;
 KEN;
@@ -241,7 +241,7 @@ TUV;
 UGA;
 UKR;
 ARE;
-GBR;CO2 emission (MT/CAP) vs energy use (KG/CAP) vs PM2.5 pollution (microgram/m3),PM2.5 pollution (microgram/m3) vs forest area (%land),CO2 emissions (MT/CAP) to GDP per CAP (US$),average forest area (%land),average education expenditure (%GDP),hospital beds (per 1000) to health expenditure (%GDP),health expenditure (US$/CAP) vs infant mortality (per 1000 birth),education expenditure (%GDP) vs health expenditure (%GDP)
+GBR;analysis1,analysis2,analysis3,analysis4,analysis5,analysis6,analysis7,analysis8
 TZA;
 UMI;
 URY;

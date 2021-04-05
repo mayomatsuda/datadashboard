@@ -1,0 +1,9 @@
+line,scatter,bar,pie
+analysis1;line,scatter,bar
+analysis2;line,scatter,bar
+analysis3;line,scatter,bar
+analysis4;line,scatter,bar,pie
+analysis5;line,scatter,bar,pie
+analysis6;line,scatter,bar
+analysis7;line,scatter,bar
+analysis8;line,scatter,bar
