@@ -24,6 +24,7 @@ public class Reader4 extends ReaderStrategy
 	@Override
 	protected void interpretData(int size, int sizeOfResults, JsonArray jsonArray)
 	{
+		goodDataFound = false;
 		for (int i = 0; i < sizeOfResults; i++)
 		{
 			//year = jsonArray.get(1).getAsJsonArray().get(i).getAsJsonObject().get("date").getAsInt();
@@ -33,6 +34,7 @@ public class Reader4 extends ReaderStrategy
 			}
 			else
 			{
+				goodDataFound = true;
 				if (currentSeries == 1) data.addSeriesOne(jsonArray.get(1).getAsJsonArray().get(i).getAsJsonObject().get("value").getAsFloat());
 			}
 		}

@@ -35,6 +35,7 @@ public class Reader1 extends ReaderStrategy
 	@Override
 	protected void interpretData(int size, int sizeOfResults, JsonArray jsonArray)
 	{
+		goodDataFound = false;
 		for (int i = 0; i < sizeOfResults; i++)
 		{
 			//year = jsonArray.get(1).getAsJsonArray().get(i).getAsJsonObject().get("date").getAsInt();
@@ -46,6 +47,7 @@ public class Reader1 extends ReaderStrategy
 			}
 			else
 			{
+				goodDataFound = true;
 				if (currentSeries == 1) data.addSeriesOne(jsonArray.get(1).getAsJsonArray().get(i).getAsJsonObject().get("value").getAsFloat());
 				if (currentSeries == 2) ((Data3Series<Float, Float, Float>) data).addSeriesTwo(jsonArray.get(1).getAsJsonArray().get(i).getAsJsonObject().get("value").getAsFloat());
 				if (currentSeries == 3) ((Data3Series<Float, Float, Float>) data).addSeriesThree(jsonArray.get(1).getAsJsonArray().get(i).getAsJsonObject().get("value").getAsFloat());

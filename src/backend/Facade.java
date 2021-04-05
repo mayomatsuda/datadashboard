@@ -1,4 +1,7 @@
 package backend;
+
+import backend.local_databases.AnalysisDatabase;
+
 public class Facade
 {
 	private String[] currentSelections;
@@ -22,7 +25,8 @@ public class Facade
 	
 	public void ReadData()
 	{
-		
+		// Run context readers
+		// Check read data - if null, open error box
 	}
 	
 	public void populateViewers()

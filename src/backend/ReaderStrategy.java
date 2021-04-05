@@ -11,6 +11,7 @@ public class ReaderStrategy
 {
 	protected String urlString;
 	protected Data data;
+	protected boolean goodDataFound;
 	
 	public Data readAppropriateData()
 	{
@@ -36,18 +37,20 @@ public class ReaderStrategy
 				int year;
 
 				interpretData(size, sizeOfResults, jsonArray);
-				return data;
+				
+				if (goodDataFound == false) return null;
+				else return data;
 			}
 		}
 		catch (IOException e)
 		{
-			System.out.println("error");
+			System.out.println("Error with reading data");
 		}
 		return null;
 	}
 	
 	protected void interpretData(int size, int sizeOfResults, JsonArray jsonArray)
 	{
-		
+		// Override depending on reader type
 	}
 }

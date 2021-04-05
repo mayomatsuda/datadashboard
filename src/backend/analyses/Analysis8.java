@@ -17,9 +17,6 @@ public class Analysis8 extends AnalysisStrategy
 		this.yearTwo = yearTwo;
 		
 		name = "Ratio of Government expenditure on education, total (% of GDP) vs Current health expenditure (% of GDP)";
-		availableYears = new int[]{2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010};
-		availableCountries = new String[]{"CAN", "USA", "BRA", "JPN", "CHI"};
-		availableViews = new String[]{"Line", "Bar", "Scatter"};
 	}
 	
 	@Override

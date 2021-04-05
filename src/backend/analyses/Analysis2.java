@@ -17,9 +17,6 @@ public class Analysis2 extends AnalysisStrategy
 		this.yearTwo = yearTwo;
 		
 		name = "PM2.5 air pollution, mean annual exposure (micrograms per cubic meter) vs Forest area (% of land area)";
-		availableYears = new int[]{2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010};
-		availableCountries = new String[]{"CAN", "USA", "BRA", "JPN", "CHI"};
-		availableViews = new String[]{"Line", "Bar", "Scatter"};
 	}
 	
 	@Override
