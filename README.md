@@ -1,5 +1,7 @@
 # datadashboard
 
+### Description:
+
 Java software for retrieval and processing of information from World Bank Database.
 User can select analysis type, country, range of years, and different graphs to display data.
 
